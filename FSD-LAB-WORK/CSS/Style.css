@@ -1,0 +1,28 @@
+/* p,h2{
+    background-color: aqua;
+    color: blueviolet;
+} */ 
+ div ~ p{  
+    background-color: rgb(127, 255, 251);
+ }
+ p:hover{
+    background-color: rgb(67, 165, 42);
+    font-size: xx-large;
+ }
+ p   ::before{
+    content:"Hiii"
+ }
+ p::after{
+    background-color: rgb(148, 138, 157);
+    content: " Hi, using content append in paragraph";
+
+ }
+p::selection{
+    background-color: beige;
+}
+p:nth-child(2){
+    background-color: rgb(236, 23, 80);
+}
+div p:nth-of-type(1){
+    background-color: antiquewhite;
+}
