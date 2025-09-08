@@ -1,40 +1,215 @@
+
+.amazon-logo-bar {
+    width: 100%;
+    background: #f3f3f3;
+    color: #232f3e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0 6px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.amazon-logo-top {
+    height: 38px;
+    width: auto;
+}
+.amazon-logo-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #febd69;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.amazon-footer {
+    width: 100%;
+    background: #232f3e;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0 12px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-size: 1.1rem;
+    margin-top: 40px;
+}
+.amazon-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Amazon Top Navbar */
+.amazon-top-navbar {
+    width: 100%;
+    background: #003366;
+    color: #fff;
+    padding: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    z-index: 10;
+}
+.amazon-navbar-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+.amazon-logo-link {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+.amazon-logo {
+    height: 38px;
+    width: auto;
+}
+.amazon-search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+}
+.amazon-search-input {
+    width: 350px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+.amazon-search-btn {
+    padding: 8px 18px;
+    border: none;
+    background: #febd69;
+    color: #111;
+    font-weight: bold;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+.amazon-search-btn:hover {
+    background: #f3a847;
+}
+.amazon-top-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.amazon-top-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: background 0.2s;
+}
+.amazon-top-links a:hover {
+    background: #232f3e;
+}
+
+/* Amazon Secondary Navbar */
+.amazon-secondary-navbar {
+    width: 100%;
+    background: #00509e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    min-height: 40px;
+    gap: 8px;
+}
+.amazon-secondary-navbar .nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 14px;
+    border-radius: 2px;
+    transition: background 0.2s, color 0.2s;
+}
+.amazon-secondary-navbar .nav-item:hover {
+    background: #37475a;
+    color: #febd69;
+}
+/* Main Navbar Styles */
+.main-navbar {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    margin: 0;
+}
+.main-navbar a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 16px 0;
+    transition: color 0.2s, border-bottom 0.2s;
+    border-bottom: 3px solid transparent;
+}
+.main-navbar a:hover {
+    color: #ffd700;
+    border-bottom: 3px solid #ffd700;
+}
 .heading{
     text-align: center;
 }
 
 .container{
-    border: 1px solid red;
-    background-color: aqua;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 200px 600px 200px;
+    border: 1px solid rgb(34, 228, 125);
+    background-color: rgba(239, 232, 232, 0.886);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
 }
 
 .b1,.b2,.b3,.b4{
     height:400px ;
     width: 300px;
-    background-color: rgb(90, 84, 205);
+    background-color: rgb(181, 167, 89);
+}
+
+.mainbox{
+    height:400px ;
+    width: 300px;
+    background-color: rgb(39, 183, 212);
     grid-template-columns: repeat(2, 1fr);
     grid-template-row: repeat(2, 1fr);
     display: grid;
+}
+
+.b{
+    margin-top: 50px;
+    margin-left: 20px;
 }
 
 .box1{
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    /* background-color: aquamarine; */
-    margin: 10px;
-    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg ;")
+    
+    /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg");     */
 }
 
 .box2{
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    /* background-color: aquamarine; */
-    background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg ;")
-    margin:10px;
+    /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg "); */
     
 }
 
@@ -42,36 +217,69 @@
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    background-color: aquamarine;
-    margin: 10px;
+    /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg"); */
 }
 
 .box4{
     height: 100px;
     width: 100px;
     border: 1px solid black;
-    background-color: aquamarine;
-    margin: 10px;
+    /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"); */
     
 }
 
-.b2{
-    height:400px ;
-    width: 300px;
-    background-color: rgb(39, 194, 73);
+.img11,.img21,.img31,.img41{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg");
+}
+
+.img12,.img22,.img32,.img42{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg ");
     
 }
 
-.b3{
-    height:400px ;
-    width: 300px;
-    background-color: rgb(90, 36, 128);
-    
+.img13,.img23,.img33,.img43{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg");
 }
 
-.b4{
-    height:400px ;
-    width: 300px;
-    background-color: rgb(225, 158, 70);
-    
+.img14,.img24,.img34,.img44{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg");
 }
+    
+
+.nav{
+    text-align: center;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+    background-color: rgb(9, 128, 219);
+    height: 50px;
+    line-height: 50px;
+    color: white;
+}
+
+.nav1,.nav2,.nav3,.nav4,.nav5,.nav6,.nav7,.nav8{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    user-select: none;
+    transition: transform 0.2s;
+}
+
+
+
