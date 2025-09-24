@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="assignmentcss.css">
+</head>
+<body>
+        <h1 style="text-align:center; font-family:Arial, Helvetica, sans-serif; margin-top:24px;">Counter App</h1>
+        <div class="custom-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/2721/2721048.png" class="logo-img" alt="Math Logo" />
+            <div class="counter-container">
+                <button class="counter-btn" id="decrement">-</button>
+                <span id="counter-value">0</span>
+                <button class="counter-btn" id="increment">+</button>
+            </div>
+        </div>
+        <script>
+            let counter = 0;
+            const min = 0;
+            const max = 10;
+            const counterValue = document.getElementById('counter-value');
+            document.getElementById('increment').onclick = function() {
+                if (counter < max) {
+                    counter++;
+                    counterValue.textContent = counter;
+                }
+            };
+            document.getElementById('decrement').onclick = function() {
+                if (counter > min) {
+                    counter--;
+                    counterValue.textContent = counter;
+                }
+            };
+        </script>
+</body>
+    <script src="assignmentjs.js"></script>
+
+
+
+
+</html>
