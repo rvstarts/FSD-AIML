@@ -5,13 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+
+ <!-- <style>
+        #adi{
+            border:5px solid black;
+            color:blue;
+            font-size:30px;
+            font-weight:bold;
+            background-color: chocolate;
+        }
+    </style> -->
+
+ 
+<body id="adi">
+    <div>
+        
+        <button onclick="makeRed()" >Red</button>
+        <button onclick="makeGreen()">Green</button>
+        <button onclick="makeBlue()">Blue</button>
+        <p id="aaa"></p>
+    </div>
     <script>
+       
+        function makeRed(){
+            document.body.style.background = "red";
+        }
+        function makeGreen(){
+            document.body.style.background = "green";
+        }
+        function makeBlue(){
+            document.body.style.background = "blue";
+        }
+    </script>
+
+
+
+
+
+   
+    <!-- <script>
 
     function abes(){
         document.write("Hello abes college");
     }
     abes();
-    </script>
+    </script> -->
+
+
+    
+</script>
+
+
 </body>
 </html>
