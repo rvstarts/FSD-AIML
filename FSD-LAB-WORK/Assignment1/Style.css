@@ -41,7 +41,7 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-/* Amazon Top Navbar */
+
 .amazon-top-navbar {
     width: 100%;
     background: #003366;
@@ -116,7 +116,7 @@
     background: #232f3e;
 }
 
-/* Amazon Secondary Navbar */
+
 .amazon-secondary-navbar {
     width: 100%;
     background: #00509e;
@@ -139,7 +139,7 @@
     background: #37475a;
     color: #febd69;
 }
-/* Main Navbar Styles */
+
 .main-navbar {
     width: 100%;
     background: #333;
