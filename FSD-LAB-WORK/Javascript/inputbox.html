@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Input Box Value Fetch</title>
+</head>
+<body>
+	<input type="text" id="myInput" placeholder="Enter something...">
+	<button onclick="fetchValue()">Get Value</button>
+	<p id="output"></p>
+	<script>
+		function fetchValue() {
+			var value = document.getElementById('myInput').value;
+			document.getElementById('output').textContent = 'You entered: ' + value;
+		}
+	</script>
+</body>
+</html>
