@@ -10,7 +10,7 @@ function App() {
   return (
     <>
   <div className='text-center '>
-  <div className='bg-blue-600 text-white rounded-md px-4 py-2 inline-block'>Welcome to React App</div>
+  <div className='bg-green-600 text-white rounded-lg px-6 py-3 inline-block shadow-lg'>Welcome to React App</div>
       <div>
         <Profile/>
       </div>
