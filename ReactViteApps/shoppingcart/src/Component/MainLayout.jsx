@@ -3,8 +3,12 @@ import React from 'react'
 function MainLayout() {
   return (
     <div>
-      <h2> Main Layout Component</h2>
-    </div>
+    <nav>
+      <Link to="/dashboard"> Dashboard </Link>
+      <Link to="/login"> Login </Link>
+      <Link to="/register"> Register </Link>
+    </nav>
+        </div>
   )
 }
 
