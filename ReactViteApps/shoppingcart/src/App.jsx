@@ -2,26 +2,31 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { BrowserRouter, Route , Routes } from 'react-router-dom'
-import Login from './Component/Login'
-import Registration from './Component/Registration'
-import Dashboard from './Component/Dashboard'
-import MainLayout from './Component/MainLayout'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Login from './component/Login'
+import Registration from './component/Registration'
+import Dashboard from './component/Dashboard'
+import MainLayout from './component/MainLayout'
 function App() {
-  
+  const[logData,setLogDat]=useState();
 
   return (
     <>
-      {/* <h2> welcome to shopping cart</h2> */}
+      {/* <h2>Welcome online Shopping</h2> */}
+
       <BrowserRouter>
       <Routes>
-        <Route path='/login' element={<Login/>} />
-        <Route path='/register' element={<Registration/>} />
-        <Route path='/dashboard' element={<Dashboard/>} />
-        <Route path='/mainlayout' element={<MainLayout/>} />
-
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Registration regData={setLogDat} />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/' element={<MainLayout/>} />
       </Routes>
       </BrowserRouter>
+      <h2 style={{backgroundColor:'brown', color:'white'}}>
+        {
+          JSON.stringify(logData)
+        }
+      </h2>
     </>
   )
 }
