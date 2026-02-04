@@ -1,7 +1,19 @@
 const { create } = require('domain');
+const sum=require('./fetchData');
 const http=require('http');
 const PORT=4007;
-const server=http.createServer((req,res)=>{
+const server=http.createServer(async(req,res)=>{
+
+    // Enable CORS
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+    if (req.method === 'OPTIONS') {
+        res.writeHead(204);
+        res.end();
+        return;
+    }
 
     // res.setHeader('Content-Type','text/html');
     // res.end('<h2>Hello from backend server</h2>');
@@ -12,13 +24,14 @@ const server=http.createServer((req,res)=>{
 
 
     if(req.url=='/data' && req.method=='GET'){
-        const data={
-            id:101,
-            name:'Amit',
-            course:'FSD'
-        }
+        // const data={
+        //     id:101,
+        //     name:'Amit',
+        //     course:'FSD'
+        // }
         res.setHeader('Content-Type','application/json');
-        res.end(JSON.stringify(data));
+        const sumData=await sum();
+        res.end(JSON.stringify({msg:sumData}));
     }
 
     if(req.url=='/data' && req.method=='POST'){

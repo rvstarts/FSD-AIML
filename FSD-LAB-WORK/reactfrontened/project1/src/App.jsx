@@ -5,15 +5,19 @@ import './App.css'
 
 function App() {
 
-  function getData() {
-    alert('Hello from App component');
+  const[data,setData]=useState([]);
 
-
+  async function getData(){
+    const response = await fetch('http://localhost:4007/data');
+    const jsondata = await response.json();
+    setData(jsondata);
+    console.log(jsondata.msg);
   }
 
   return (
     <>
      <h2>Welcome to React app</h2>
+     {JSON.stringify(data)}
      <button onClick={getData}>fetchdata</button>
     </>
   )
