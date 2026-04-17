@@ -2,46 +2,30 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Main from './component/Main'
+import FetchData from './component/FetchData'
+import Login from './component/login'
+import Registration from './component/registration'
+import Dashboard from './component/Dashboard'
+import 'bootstrap/dist/css/bootstrap.css';
+// Put any other imports below so that CSS from your
+// components takes precedence over default styles.
 function App() {
-  const[data,setData]=useState([]);
-  const[loader,setLoader]=useState(false)
-async function getData(){
+ 
 
-  try{
-    setLoader(true)
-       const response=await fetch('http://localhost:4007/data');
-       const jsondata=await response.json();
-       setData(jsondata.msg);
-  }catch(e){
-    console.log(e)
-  }
-  finally{
-     setLoader(false)
-  }
-
-  
-}
-
-function cartData(dataitem){
-alert(dataitem.title)
-}
   return (
     <>
-      <h2>Welocme to React App</h2>
-      {
-          data.map((ele)=>(
-          <div style={{border:'2px solid red'}}>
-            <img src={ele.image} height={200} width={200}></img>
-            <h2>{ele.id}:{ele.title}</h2>
-            <h3>{ele.title}</h3>
-            <button onClick={()=>cartData(ele)}>Add to cart</button>
-          </div>
-        ))
-      }
-      {loader?(<h2 style={{color:'red'}}>Data is loading...</h2>):("")}
-      {/* {JSON.stringify(data)} */}
-      <button onClick={getData}>FetchData</button>
+   <BrowserRouter>
+   <Routes>
+    <Route path='/' element={<Main/>}/>
+    <Route path='/fetchdata' element={<FetchData/>}/>
+    <Route path='/login' element={<Login/>}/>
+      <Route path='/register' element={<Registration/>}/>
+    <Route path='/registration' element={<Registration/>}/>
+    <Route path='/dashboard' element={<Dashboard/>}/>
+   </Routes>
+   </BrowserRouter>
     </>
   )
 }
